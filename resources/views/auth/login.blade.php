@@ -65,6 +65,13 @@
                             </div>
                         </div>
                     </form>
+
+                    <div class="text-center mt-3">
+                        <p class="mb-1">
+                            <a href="{{ route('user.login') }}">User Login</a> | 
+                            <a href="{{ route('admin.login') }}">Admin Login</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
