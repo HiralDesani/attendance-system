@@ -120,7 +120,7 @@
                                             <tbody>
                                                 @forelse($attendances as $att)
                                                     <tr>
-                                                        <td>{{ $att->id }}</td>
+                                                        <td>{{ ($attendances->currentPage() - 1) * $attendances->perPage() + $loop->iteration }}</td>
                                                         <td>{{ \Carbon\Carbon::parse($att->date)->format('d M Y') }}</td>
                                                         <td>
                                                             @if(isset($att->first_check_in) && $att->first_check_in)
